@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Portfolio of Minketan Tripathi, a frontend developer building responsive web applications with React, JavaScript, and clean user-focused interfaces."
+  >
+  <title>Minketan Tripathi | Frontend Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <nav class="navbar">
+    <div class="logo">Minketan</div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+
+    <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Toggle navigation menu">&#9776;</button>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content" data-aos="fade-up">
+      <div class="hero-topline">
+        <p class="intro">Available for internships and frontend roles</p>
+        <span class="status-pill">Open to work</span>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-main">
+          <h1>
+            <span class="gradient">Minketan Tripathi</span>
+          </h1>
+
+          <h2 class="typing">
+            <span id="typing-text"></span>
+          </h2>
+
+          <p class="description">
+            Frontend developer focused on React, responsive UI, and practical web apps that solve real user problems with clarity and speed.
+          </p>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <strong>3+</strong>
+              <span>Portfolio projects</span>
+            </div>
+            <div class="metric">
+              <strong>100+</strong>
+              <span>DSA problems solved</span>
+            </div>
+            <div class="metric">
+              <strong>Open</strong>
+              <span>To internships and roles</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="Minketan_Resume_GoogleStyle.pdf" download class="btn primary">Download Resume</a>
+            <a href="#projects" class="btn secondary">View Projects</a>
+            <a href="mailto:minketantripathi78@gmail.com" class="btn tertiary">Email Me</a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://linkedin.com/in/minketan-tripathi" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/minketan22" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://leetcode.com/minketan22" target="_blank" rel="noopener">
+              <i class="fas fa-code"></i> LeetCode
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-showcase" data-aos="fade-left" data-aos-delay="180">
+          <div class="showcase-card profile-card">
+            <p class="card-label">Snapshot</p>
+            <h3>Frontend-first, product-aware</h3>
+            <p>I enjoy combining clean visual design with practical logic so the final result feels usable, not just attractive.</p>
+          </div>
+
+          <div class="showcase-card stack-card">
+            <p class="card-label">Core Stack</p>
+            <div class="stack-orbs">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>APIs</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+
+          <div class="showcase-card signal-card">
+            <p class="card-label">What I focus on</p>
+            <ul class="signal-list">
+              <li>Building responsive and easy-to-use interfaces</li>
+              <li>Writing projects clearly so the work is easy to understand</li>
+              <li>Improving consistently through hands-on practice</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title">Building polished interfaces with practical thinking</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card" data-aos="fade-up">
+        <p>
+          I am a developer who enjoys turning ideas into usable products. My focus is on frontend development with React and JavaScript, while also staying comfortable with APIs, programming fundamentals, and problem solving.
+        </p>
+        <p>
+          I am currently strengthening my portfolio through projects that reflect real product thinking: clean UI, responsive design, reliable logic, and user-friendly experiences that work across devices.
+        </p>
+      </div>
+
+      <div class="about-points" data-aos="fade-up" data-aos-delay="120">
+        <div class="info-tile">
+          <h3>What I bring</h3>
+          <p>Responsive UI, component-based development, API integration, and a strong learning mindset.</p>
+        </div>
+        <div class="info-tile">
+          <h3>Current focus</h3>
+          <p>Frontend internships, React-based projects, and improving full-stack understanding through hands-on builds.</p>
+        </div>
+        <div class="info-tile">
+          <h3>Working style</h3>
+          <p>Structured, curious, and detail-oriented with attention to usability, clarity, and maintainable code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="content-section">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title">Tech stack and strengths</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group" data-aos="fade-up">
+        <h3>Frontend</h3>
+        <div class="chip-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+        <h3>Programming</h3>
+        <div class="chip-list">
+          <span>Java</span>
+          <span>C++</span>
+          <span>DSA</span>
+          <span>OOP</span>
+          <span>Problem Solving</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+        <h3>Tools</h3>
+        <div class="chip-list">
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>VS Code</span>
+          <span>REST APIs</span>
+          <span>Chrome DevTools</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="highlights" class="content-section">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow">Highlights</p>
+      <h2 class="section-title">Signals that add trust</h2>
+    </div>
+
+    <div class="highlight-grid">
+      <div class="highlight-card" data-aos="fade-up">
+        <h3>Project-first learning</h3>
+        <p>I learn by building and refining projects that combine UI, logic, and usability instead of only following tutorials.</p>
+      </div>
+
+      <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Consistent problem solving</h3>
+        <p>Active coding practice helps me write cleaner logic, debug faster, and approach frontend tasks with stronger fundamentals.</p>
+      </div>
+
+      <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Career-ready focus</h3>
+        <p>This portfolio is built to showcase not just code, but communication, ownership, and readiness for internships and entry-level roles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="content-section">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow">Projects</p>
+      <h2 class="section-title">Selected work</h2>
+    </div>
+
+    <div class="featured-project" data-aos="fade-up">
+      <div class="featured-copy">
+        <p class="featured-label">Featured Project</p>
+        <h3>Weather Monitoring System</h3>
+        <p>
+          A weather analysis web app that fetches live data through APIs and presents it in a simple, user-friendly interface. The project was built to practice API integration, responsive layout design, and turning raw data into something users can understand quickly.
+        </p>
+        <ul class="feature-list">
+          <li>Integrated live weather data from an external API</li>
+          <li>Designed a clean UI for quick location-based weather checks</li>
+          <li>Focused on clarity, responsiveness, and real-world usefulness</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://minketan22.github.io/Weather-monitoring-and-analysis-system-/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+          <a href="https://github.com/minketan22/Weather-monitoring-and-analysis-system-" target="_blank" rel="noopener">GitHub &rarr;</a>
+        </div>
+      </div>
+      <div class="featured-visual" aria-hidden="true">
+        <div class="visual-panel visual-main">
+          <span class="visual-badge">Live Data</span>
+          <span class="visual-line line-wide"></span>
+          <span class="visual-line"></span>
+          <span class="visual-line line-short"></span>
+        </div>
+        <div class="visual-panel visual-side">
+          <span class="mini-chip">Forecast</span>
+          <span class="mini-chip">Humidity</span>
+          <span class="mini-chip">Wind</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-container">
+      <div class="card" data-aos="fade-up">
+        <h3>Tic Tac Toe Game</h3>
+        <p>Built an interactive game in React to practice component logic, state updates, and responsive interaction design.</p>
+        <span>React | JavaScript | UI State</span>
+        <a href="https://github.com/minketan22" target="_blank" rel="noopener">View Source &rarr;</a>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="150">
+        <h3>Campus Cab</h3>
+        <p>An idea-driven cab booking system for campus use, focused on usability, booking flow, and practical transport management.</p>
+        <span>Java | Python | System Design</span>
+        <a href="https://github.com/minketan22" target="_blank" rel="noopener">View Project &rarr;</a>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio designed to present projects, skills, and career intent with a cleaner personal brand and better recruiter flow.</p>
+        <span>HTML | CSS | JavaScript</span>
+        <a href="https://github.com/minketan22" target="_blank" rel="noopener">Source Code &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">Let us build something useful</h2>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-panel" data-aos="fade-up">
+        <h3>Open to internships and frontend opportunities</h3>
+        <p>
+          If you are hiring, collaborating, or reviewing junior frontend candidates, I would be happy to connect and share more about my work.
+        </p>
+
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:minketantripathi78@gmail.com">minketantripathi78@gmail.com</a></p>
+          <p><strong>Location:</strong> Ambala, Haryana</p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/minketan-tripathi" target="_blank" rel="noopener">linkedin.com/in/minketan-tripathi</a></p>
+        </div>
+      </div>
+
+      <form class="contact-form" data-aos="fade-up" data-aos-delay="120" onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+        <p class="form-note">This form opens your email app so you can contact me directly.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Minketan Tripathi. Built for internships, freelance work, and frontend opportunities.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("active");
+    }
+
+    function closeMenu() {
+      document.getElementById("nav-links").classList.remove("active");
+    }
+
+    const roles = [
+      "Frontend Developer",
+      "React Developer",
+      "Problem Solver",
+      "Entry-Level Web Engineer"
+    ];
+
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const target = document.getElementById("typing-text");
+      const current = roles[roleIndex];
+
+      if (isDeleting) {
+        target.textContent = current.substring(0, charIndex--);
+      } else {
+        target.textContent = current.substring(0, charIndex++);
+      }
+
+      if (!isDeleting && charIndex === current.length + 1) {
+        isDeleting = true;
+        setTimeout(type, 1500);
+        return;
+      }
+
+      if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+      }
+
+      setTimeout(type, isDeleting ? 60 : 100);
+    }
+
+    type();
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const name = e.target.querySelector('input[type="text"]').value.trim();
+      const email = e.target.querySelector('input[type="email"]').value.trim();
+      const message = e.target.querySelector("textarea").value.trim();
+      const subject = encodeURIComponent("Portfolio enquiry from " + name);
+      const body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n\n" +
+        message
+      );
+
+      window.location.href = "mailto:minketantripathi78@gmail.com?subject=" + subject + "&body=" + body;
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
